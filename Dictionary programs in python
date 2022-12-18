@@ -1,0 +1,10 @@
+#Write a Python script to sort (ascending and descending) a dictionary by value.
+d = {1: 4, 3: 8, 4: 5, 2: 6, 0: 7}
+# by keys
+keys = sorted(d.items())
+print(dict(keys))
+# by value
+s = sorted(d.items(),key= lambda x:x[1])
+print(dict(s))
+# descending values
+print(dict(sorted(d.items(),key= lambda x:x[1],reverse=True)))
